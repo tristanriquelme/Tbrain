@@ -2,7 +2,7 @@
 name: friday-reminder
 type: deterministic
 trigger: cron
-resolver_entry: "send friday weekly relevantes reminder to bdr_global"
+resolver_entry: "send friday weekly relevantes reminder to all revenue teams"
 schedule: "0 9 * * 5"
 timezone: America/Santiago
 connectors:
@@ -12,16 +12,35 @@ models:
   fast: none
 cost_per_run: "$0.00"
 success_metrics:
-  - message delivered to #bdr_global
-  - correct channel confirmed (C03SHGED1FW)
+  - mensaje entregado en #bdr_global (C03SHGED1FW)
+  - mensaje entregado en canal Pre-Sales / RevOps (C02MW42D8F4)
+  - mensaje entregado en canal Customer Success (C06GB14B5PC)
 ---
 
-Envía un mensaje al canal #bdr_global de Slack (ID: C03SHGED1FW) recordando
-al equipo de Sales enviar sus relevantes de la semana antes del mediodía.
+Envía un recordatorio de relevantes semanales a los equipos de revenue.
+Envía **3 mensajes separados**, uno por canal, con el texto adaptado a cada equipo.
 
-Mensaje exacto a enviar:
+---
 
-"🔔 Buenos días. Recordatorio: envío de relevantes de la semana
+**Canal Sales — #bdr_global (`C03SHGED1FW`)**
+
+"🔔 Buenos días equipo Sales. Recordatorio: envío de relevantes de la semana
 antes de las 12:00. Formato H/L por cuenta con next step concreto."
 
-Confirma el timestamp de entrega al finalizar.
+---
+
+**Canal Pre-Sales / RevOps (`C02MW42D8F4`)**
+
+"🔔 Buenos días equipo Pre-Sales y RevOps. Recordatorio: envío de relevantes
+de la semana antes de las 12:00. Formato H/L por cuenta con next step concreto."
+
+---
+
+**Canal Customer Success (`C06GB14B5PC`)**
+
+"🔔 Buenos días equipo Customer Success. Recordatorio: envío de relevantes
+de la semana antes de las 12:00. Formato H/L por cuenta con next step concreto."
+
+---
+
+Confirma el timestamp de entrega de los 3 mensajes al finalizar.

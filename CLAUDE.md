@@ -14,6 +14,7 @@ Architecture based on [GBrain](https://github.com/garrytan/gbrain) by Garry Tan.
 |------|------|-----------------|------------|
 | `gbrain-gary-tan.md` | gbrain-gary-tan | Nightly 23:30 | Google Drive, Slack, Web |
 | `friday-reminder.md` | friday-reminder | Fridays 09:00 | Slack |
+| `friday-synthesis.md` | friday-synthesis | Fridays 17:00 | Slack, Google Drive |
 | `weekly-planning.md` | weekly-planning | Sundays 22:00 | Google Drive, Google Calendar |
 
 All schedules use `timezone: America/Santiago` (UTC-4 standard / UTC-3 summer, DST-aware).
@@ -42,7 +43,8 @@ Tbrain/
     ├── settings.json            ← Connector permissions
     └── tasks/
         ├── gbrain-gary-tan.md   ← Main nightly routine
-        ├── friday-reminder.md   ← Friday Slack reminder
+        ├── friday-reminder.md   ← Friday 09:00 Slack reminder (Sales, Pre-Sales, CS)
+        ├── friday-synthesis.md  ← Friday 17:00 synthesis → Relevantes SLT in Drive
         └── weekly-planning.md   ← Sunday weekly planning
 ```
 
@@ -85,7 +87,7 @@ All output documents follow the GBrain Knowledge Model:
 |----------|----|---------|
 | G-Brain — Estado Activo (master) | `1TLgbZgdehDlcHH4pb4wRyVn6Hf7XgZlv2KIT2L2Bjak` | gbrain-gary-tan, weekly-planning |
 | Relevantes CS 2026 | `11Ux3z17eXvtOG0kRJs12_rG0KzWxrX8uIaGoinXxJeA` | gbrain-gary-tan, weekly-planning |
-| Relevantes SLT 2026 | `1q-kNUlgtq7KAaI2TIUD9n7kxXBTiy4F0O6qkplrkylE` | gbrain-gary-tan, weekly-planning |
+| Relevantes SLT 2026 | `1q-kNUlgtq7KAaI2TIUD9n7kxXBTiy4F0O6qkplrkylE` | gbrain-gary-tan, weekly-planning, friday-synthesis |
 | Narrativa Retención | `111a2K_NcQBk6BPOdgXHE_B5wVOJtk69lz_s53p5O1us` | gbrain-gary-tan, weekly-planning |
 | Presupuesto CS | *(search by name)* | weekly-planning |
 | SteerCos | *(search by name)* | weekly-planning |
@@ -95,7 +97,9 @@ All output documents follow the GBrain Knowledge Model:
 | Channel | ID | Monitored by |
 |---------|----|-------------|
 | #revenue | `C087V8PDSTB` | gbrain-gary-tan |
-| #bdr_global | `C03SHGED1FW` | gbrain-gary-tan, friday-reminder |
+| #bdr_global (Sales) | `C03SHGED1FW` | gbrain-gary-tan, friday-reminder, friday-synthesis |
+| Pre-Sales / RevOps | `C02MW42D8F4` | friday-reminder, friday-synthesis |
+| Customer Success | `C06GB14B5PC` | friday-reminder, friday-synthesis |
 | #revenue-chile | `C0ADH2XTQU8` | gbrain-gary-tan |
 | #revenue-mexico | `G01PDDB259A` | gbrain-gary-tan |
 | #revenue-peru | `C0A0S1315HT` | gbrain-gary-tan |

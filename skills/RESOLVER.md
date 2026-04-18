@@ -9,7 +9,8 @@ tags: [resolver, routing, skills]
 | Trigger | Skill | Type | Description |
 |---------|-------|------|-------------|
 | `cron: 30 23 * * *` (America/Santiago) | `gbrain-gary-tan` | judgment | Análisis nocturno — genera Sueños en Drive |
-| `cron: 0 9 * * 5` (America/Santiago) | `friday-reminder` | deterministic | Recordatorio semanal relevantes en #bdr_global |
+| `cron: 0 9 * * 5` (America/Santiago) | `friday-reminder` | deterministic | Recordatorio semanal relevantes a Sales, Pre-Sales/RevOps y CS |
+| `cron: 0 17 * * 5` (America/Santiago) | `friday-synthesis` | judgment | Síntesis de relevantes semanales → Relevantes SLT en Drive |
 | `cron: 0 22 * * 0` (America/Santiago) | `weekly-planning` | judgment | Briefing semanal + actualiza evento calendario lunes |
 
 ## Dependency Graph
@@ -29,6 +30,10 @@ weekly-planning (judgment)
 
 friday-reminder (deterministic)
 └── (ninguna — mensaje directo a Slack, sin brain lookup)
+
+friday-synthesis (judgment)
+├── brain-ops           — carga contexto de cuentas antes de leer Slack
+└── reports             — append Knowledge Model en Relevantes SLT (Drive)
 ```
 
 ## MECE Check
@@ -38,6 +43,7 @@ friday-reminder (deterministic)
 - Sin skills huérfanas
 - Routing deterministic vs. judgment correcto:
   - `friday-reminder`: mismo input → mismo output → deterministic ✓
+  - `friday-synthesis`: síntesis de mensajes Slack variables → judgment ✓
   - `gbrain-gary-tan`: requiere síntesis de fuentes variables → judgment ✓
   - `weekly-planning`: requiere síntesis de docs + calendario variable → judgment ✓
 
