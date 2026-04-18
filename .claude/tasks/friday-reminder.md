@@ -29,10 +29,12 @@ antes de las 12:00. Formato H/L por cuenta con next step concreto."
 
 ---
 
-**Canal Pre-Sales / RevOps (`C02MW42D8F4`)**
+**Canal Demand Gen / SDRs (`C02MW42D8F4`)**
 
-"🔔 Buenos días equipo Pre-Sales y RevOps. Recordatorio: envío de relevantes
-de la semana antes de las 12:00. Formato H/L por cuenta con next step concreto."
+"🔔 Buenos días equipo Demand Gen. Recordatorio: envío de métricas de la semana
+antes de las 12:00. Incluir: reuniones calificadas generadas, cuentas trabajadas
+en outbound, secuencias activas y tasa de respuesta. Si hubo bloqueo en alguna
+cuenta o segmento, menciónalo."
 
 ---
 

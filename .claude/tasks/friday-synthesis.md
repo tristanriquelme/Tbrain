@@ -35,14 +35,22 @@ Lee los mensajes publicados **hoy** (desde las 09:00 hasta ahora) en los siguien
 - **Pre-Sales / RevOps** — ID: `C02MW42D8F4`
 - **Customer Success** — ID: `C06GB14B5PC`
 
-Para cada mensaje, extrae:
-- Equipo (Sales / Pre-Sales / RevOps / CS)
+Para cada canal, extrae según el tipo de equipo:
+
+**Sales (#bdr_global)** y **Customer Success**:
 - Cuenta mencionada
 - Clasificación H (High) o L (Low)
-- Next step concreto y fecha (si se menciona)
-- Señal especial: alerta de churn, oportunidad, bloqueo (si aplica)
+- Next step concreto y fecha
+- Señal especial: alerta de churn, oportunidad, bloqueo
 
-Si un canal no tiene mensajes relevantes hoy (silencio), regístralo como `SILENCIO`.
+**Demand Gen / SDRs** (canal C02MW42D8F4 — tope de funnel, no trabajan cuentas post-reunión):
+- Reuniones calificadas generadas en la semana (número y cuentas)
+- Cuentas trabajadas en outbound
+- Secuencias activas
+- Tasa de respuesta o bloqueos por segmento
+- NO extraer relevantes por cuenta individual — su output es volumen y calidad de pipeline generado
+
+Si un canal no tiene mensajes hoy, regístralo como `SILENCIO`.
 
 ---
 
@@ -58,9 +66,11 @@ SALES
 - [ídem]
 - SILENCIO: [cuentas sin actualización esta semana, si aplica]
 
-PRE-SALES / REVOPS
-- [Cuenta]: [H/L] — [next step] → [fecha]
-- [ídem]
+DEMAND GEN (SDRs)
+- Reuniones calificadas generadas: [N] → [lista de cuentas]
+- Outbound activo: [N cuentas trabajadas]
+- Tasa de respuesta: [%] | Secuencias activas: [N]
+- Bloqueos: [segmento o cuenta con baja respuesta, si aplica]
 
 CUSTOMER SUCCESS
 - [Cuenta]: [H/L] — [next step] → [fecha]
@@ -87,7 +97,7 @@ Si ya existía una sección de esta semana, reemplázala.
 **TIMELINE (append — nunca editar entradas anteriores):**
 Agrega al final del Timeline:
 ```
-- [TIMESTAMP] — SLACK/friday-synthesis — Semana [N]: relevantes de Sales ([N] cuentas), Pre-Sales/RevOps ([N] cuentas), CS ([N] cuentas). [SILENCIO en X si aplica]
+- [TIMESTAMP] — SLACK/friday-synthesis — Semana [N]: Sales ([N] cuentas), Demand Gen ([N] reuniones generadas), CS ([N] cuentas). [SILENCIO en X si aplica]
 ```
 
 **Header de reporte (primera línea del bloque insertado):**
