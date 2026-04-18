@@ -85,23 +85,29 @@ ALERTAS
 
 ---
 
-## PASO 3 — INSERTA EN RELEVANTES SLT (Knowledge Model)
+## PASO 3 — ESCRIBE EN DOC INTERMEDIO (para revisión manual)
 
-Abre el documento **Relevantes SLT** en Google Drive:
-ID: `1q-kNUlgtq7KAaI2TIUD9n7kxXBTiy4F0O6qkplrkylE`
+**NO escribir en Relevantes SLT.** Tristan revisará y hará el copy-paste manualmente.
 
-**COMPILED TRUTH (reescribir sección semanal):**
-Actualiza o crea la sección `## Semana [N] — [FECHA_LUNES]` con la síntesis del PASO 2.
-Si ya existía una sección de esta semana, reemplázala.
+Busca en Google Drive el documento llamado **"relevantes-revenue-intermedio"**.
+- Si existe: reemplaza todo su contenido con la síntesis del PASO 2.
+- Si no existe: créalo con ese nombre exacto.
 
-**TIMELINE (append — nunca editar entradas anteriores):**
-Agrega al final del Timeline:
+Estructura del doc:
+
 ```
-- [TIMESTAMP] — SLACK/friday-synthesis — Semana [N]: Sales ([N] cuentas), Demand Gen ([N] reuniones generadas), CS ([N] cuentas). [SILENCIO en X si aplica]
+[TIMESTAMP UTC] | friday-synthesis | Slack+Drive | keywords: relevantes, semana-[N], wherex
+
+⚠️ BORRADOR PARA REVISIÓN — No es el doc final. Copiar a Relevantes SLT tras editar.
+
+SÍNTESIS SEMANAL — Semana [N] | [FECHA_LUNES] al [FECHA_VIERNES]
+[contenido completo del PASO 2]
+
+---
+Generado automáticamente por friday-synthesis. Fuentes: #bdr_global, Demand Gen, Customer Success.
 ```
 
-**Header de reporte (primera línea del bloque insertado):**
-`[TIMESTAMP UTC] | friday-synthesis | Slack+Drive | keywords: relevantes, semana-[N], wherex`
+Confirma el ID y link del doc intermedio al finalizar.
 
 ---
 
