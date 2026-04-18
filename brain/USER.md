@@ -22,6 +22,8 @@ tags: [user, cro, wherex]
 | Narrativa Retención | `111a2K_NcQBk6BPOdgXHE_B5wVOJtk69lz_s53p5O1us` | Estrategia retención |
 | Narrativa CX | `1MgTtseOGuyVwnB-M5AnvT7iaSilMHEZQV6If0n3APxI` | Narrativa área CX |
 | Narrativa Marketplace | `1QvytEsb3iIyl0i9QlQXmR83u7E5rWFSc7lJMmWRhaRo` | Narrativa área Marketplace |
+| relevantes-revenue-intermedio | `1PtAlxc_JXdP1-HHOUiAJe6VI5ejtih8kEF5m6QebIW8` | Borrador síntesis viernes (friday-synthesis) |
+| relevantes-revenue-intermedio | `1PtAlxc_JXdP1-HHOUiAJe6VI5ejtih8kEF5m6QebIW8` | Borrador semanal para revisión manual |
 | Presupuesto CS | *(buscar por nombre)* | Targets y brechas |
 | SteerCos | *(buscar por nombre)* | Actas y compromisos |
 

@@ -66,9 +66,10 @@ Aplica todas las reglas de `skills/wherex-weekly-synthesis.md`:
 
 **NO escribir en Relevantes SLT.** Tristan revisará y hará el copy-paste manualmente.
 
-Busca en Google Drive el documento **"relevantes-revenue-intermedio"**.
-- Si existe: reemplaza todo su contenido.
-- Si no existe: créalo con ese nombre exacto.
+Abre el documento **"relevantes-revenue-intermedio"** en Google Drive:
+ID: `1PtAlxc_JXdP1-HHOUiAJe6VI5ejtih8kEF5m6QebIW8`
+
+Reemplaza todo su contenido con el output del PASO 2.
 
 Primera línea del doc:
 `[TIMESTAMP UTC] | friday-synthesis | Slack | keywords: relevantes, semana-[N], wherex`
