@@ -105,6 +105,7 @@ All output documents follow the GBrain Knowledge Model:
 | #revenue-chile | `C0ADH2XTQU8` | gbrain-gary-tan |
 | #revenue-mexico | `G01PDDB259A` | gbrain-gary-tan |
 | #revenue-peru | `C0A0S1315HT` | gbrain-gary-tan |
+| SLT | `C01QPB0B371` | gbrain-gary-tan |
 
 ## Google Calendar
 

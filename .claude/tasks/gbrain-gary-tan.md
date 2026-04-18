@@ -75,6 +75,7 @@ Lee los siguientes canales y extrae solo mensajes de las últimas 24 horas:
 - #revenue-chile (C0ADH2XTQU8)
 - #revenue-mexico (G01PDDB259A)
 - #revenue-peru (C0A0S1315HT)
+- SLT (C01QPB0B371)
 
 **SIGNAL-DETECTOR** — Extrae y clasifica cada señal detectada:
 - Señales tipadas: AVANCE | BLOQUEO | SILENCIO | ALERTA_CHURN | NEXT_STEP_DECLARADO

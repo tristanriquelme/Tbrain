@@ -36,6 +36,7 @@ tags: [user, cro, wherex]
 | #revenue-peru | `C0A0S1315HT` | Revenue Perú |
 | Pre-Sales / RevOps | `C02MW42D8F4` | Recordatorios Pre-Sales y RevOps |
 | Customer Success | `C06GB14B5PC` | Recordatorios Customer Success |
+| SLT | `C01QPB0B371` | gbrain-gary-tan |
 
 ## Clientes Prioritarios (Top GMV Presupuesto 2026)
 
