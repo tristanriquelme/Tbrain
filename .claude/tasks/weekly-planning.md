@@ -50,14 +50,23 @@ Extrae y construye un compiled truth map de:
 
 ---
 
-## PASO 2 — DAILY-TASK-PREP: LOOKAHEAD DEL CALENDARIO
+## PASO 2 — DAILY-TASK-PREP: LOOKAHEAD DEL CALENDARIO + NOTAS 1V1
 
-Lee el calendario de Tristan para los próximos 7 días (Google Calendar).
+Lee el calendario de Tristan para los próximos 7 días (Google Calendar ID: `i66ia4t951r9pp9l6tavgub8vc`).
 
 Para cada evento relevante (reuniones con clientes, SteerCos, reviews):
 - Extrae: nombre del evento, asistentes, fecha/hora
 - Cruza con el compiled truth map del PASO 1 para agregar contexto de cuenta
 - Identifica: ¿hay preparación pendiente para alguna reunión?
+
+**NOTAS 1V1 — Reportes directos:**
+Busca en el calendario las citas de 1v1 con reportes directos (Juan Carlos, Sofía Garcés y otros).
+Para cada cita 1v1 encontrada en los últimos 14 días:
+- Abre el documento adjunto o enlazado en la descripción del evento
+- Extrae: compromisos declarados, temas pendientes, señales de estado del área
+- Si la cita es de la próxima semana: identifica qué contexto necesita Tristan para llegar preparado
+
+Incorpora los hallazgos de las notas 1v1 al compiled truth map con etiqueta `EQUIPO`.
 
 ---
 
@@ -88,6 +97,10 @@ REUNIONES CLAVE
 CUENTAS A MONITOREAR ESTA SEMANA
 - [Cuenta]: [estado actual] | [señal de alerta si existe]
 - [ídem x 3-5]
+
+EQUIPO — SEGUIMIENTO 1V1
+- [Nombre reporte]: [compromiso pendiente o tema abierto desde última 1v1]
+- [ídem por reporte con notas disponibles]
 
 FOCO ESTRATÉGICO
 [1 párrafo: qué debe avanzar obligatoriamente esta semana para el revenue target]
