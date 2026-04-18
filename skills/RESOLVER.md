@@ -10,7 +10,7 @@ tags: [resolver, routing, skills]
 |---------|-------|------|-------------|
 | `cron: 30 23 * * *` (America/Santiago) | `gbrain-gary-tan` | judgment | Análisis nocturno — genera Sueños en Drive |
 | `cron: 0 9 * * 5` (America/Santiago) | `friday-reminder` | deterministic | Recordatorio semanal relevantes a Sales, Pre-Sales/RevOps y CS |
-| `cron: 0 17 * * 5` (America/Santiago) | `friday-synthesis` | judgment | Síntesis de relevantes semanales → Relevantes SLT en Drive |
+| `cron: 0 17 * * 5` (America/Santiago) | `friday-synthesis` | judgment | Lee Slack, aplica wherex-weekly-synthesis rules → doc intermedio en Drive |
 | `cron: 0 22 * * 0` (America/Santiago) | `weekly-planning` | judgment | Briefing semanal + actualiza evento calendario lunes |
 
 ## Dependency Graph
@@ -32,8 +32,8 @@ friday-reminder (deterministic)
 └── (ninguna — mensaje directo a Slack, sin brain lookup)
 
 friday-synthesis (judgment)
-├── brain-ops           — carga contexto de cuentas antes de leer Slack
-└── reports             — append Knowledge Model en Relevantes SLT (Drive)
+├── wherex-weekly-synthesis — reglas de transformación editorial, output structure, handle map
+└── reports                 — escribe doc intermedio en Drive (no Relevantes SLT)
 ```
 
 ## MECE Check

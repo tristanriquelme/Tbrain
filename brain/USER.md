@@ -50,6 +50,31 @@ Coca Cola Mexico
 **Perú (5):** Danper, Corporación Aceros Arequipa, Corporación Primax,
 Agricola Cerro Prieto, Lindcorp Peru
 
+## Slack Handle Map
+
+| Initials | Name | Slack Handle |
+|----------|------|-------------|
+| AC | Agustin Corssen | @Agustin Corssen |
+| AD | Agustín Donoso | @Agustín Donoso |
+| AYS | Catalina Araya Tejada | @Catalina Araya Tejada |
+| FC | Fiorella Castellano | @Fiorella Castellano |
+| FL | Felipe Lira | @Felipe Lira |
+| FP | Francisco Puente | @Francisco Puente |
+| SG | Sofía Garcés | @Sofía Garcés |
+| IR | Isa Rincón | @IsaRincón |
+| JL | Jorge López | @Jorge López |
+| JTM | José Tomás Márquez | @José Tomás Márquez Fuenzalida |
+| LL | Lucas Lorenzini | @Lucas Lorenzini |
+| LFZ | Luis Felipe Zanoni | @Luis Felipe Zanoni |
+| MA | Matías Almeida | @Matías Almeida |
+| MCM | María Camila Márquez | @María Camila Márquez |
+| MV | Mauricio Villegas | @Mauricio Villegas |
+| PM | Pepe Macías | @José Norberto Macías Hernández |
+| PN | Paulo Nuñez Del Prado | @Paulo Nuñez Del Prado |
+| SL | Sergio Leguizamon | @Sergio Leguizamon |
+| TRub | Tomás Rubinstein | @Tomás Rubinstein |
+| TR | Tristan Riquelme | @Tristan Riquelme |
+
 ## Google Calendar
 
 - **Evento clave:** Weekly Planning Review — lunes 08:00 AM Chile

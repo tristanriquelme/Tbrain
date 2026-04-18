@@ -73,6 +73,7 @@ All output documents follow the GBrain Knowledge Model:
 | Tiered Enrich (Tier 1/2/3) | `gbrain-gary-tan` HILO 3 — structured fact extraction per client |
 | Cross-Modal Review | `gbrain-gary-tan` PASO 2 — quality gate before output |
 | Cron Idempotency | `gbrain-gary-tan` PASO 0 — checks for existing doc before creating |
+| Wherex Weekly Synthesis | `friday-synthesis` — editorial transformation rules, geo breakdown, postscript |
 | Knowledge Model | Output format for Sueños and weekly briefings |
 | Reports Format | Timestamped headers with keyword routing on all saved docs |
 | SKILL.md Frontmatter | All task files — `type`, `trigger`, `dependencies`, `models`, `cost_per_run`, `success_metrics` |
