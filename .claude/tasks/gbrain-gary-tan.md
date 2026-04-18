@@ -55,6 +55,8 @@ Luego lee los docs modificados en las últimas 24 horas buscando cambios en:
 - Relevantes CS 2026 (ID: 11Ux3z17eXvtOG0kRJs12_rG0KzWxrX8uIaGoinXxJeA)
 - Relevantes SLT 2026 (ID: 1q-kNUlgtq7KAaI2TIUD9n7kxXBTiy4F0O6qkplrkylE)
 - Narrativa Retención (ID: 111a2K_NcQBk6BPOdgXHE_B5wVOJtk69lz_s53p5O1us)
+- Narrativa CX (ID: 1MgTtseOGuyVwnB-M5AnvT7iaSilMHEZQV6If0n3APxI)
+- Narrativa Marketplace (ID: 1QvytEsb3iIyl0i9QlQXmR83u7E5rWFSc7lJMmWRhaRo)
 
 **SIGNAL-DETECTOR** — Mientras lees cada doc, extrae y registra en paralelo:
 - Entidades mencionadas: cuentas, empresas, personas clave

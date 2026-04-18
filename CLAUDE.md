@@ -89,6 +89,8 @@ All output documents follow the GBrain Knowledge Model:
 | Relevantes CS 2026 | `11Ux3z17eXvtOG0kRJs12_rG0KzWxrX8uIaGoinXxJeA` | gbrain-gary-tan, weekly-planning |
 | Relevantes SLT 2026 | `1q-kNUlgtq7KAaI2TIUD9n7kxXBTiy4F0O6qkplrkylE` | gbrain-gary-tan, weekly-planning, friday-synthesis |
 | Narrativa Retención | `111a2K_NcQBk6BPOdgXHE_B5wVOJtk69lz_s53p5O1us` | gbrain-gary-tan, weekly-planning |
+| Narrativa CX | `1MgTtseOGuyVwnB-M5AnvT7iaSilMHEZQV6If0n3APxI` | gbrain-gary-tan, weekly-planning |
+| Narrativa Marketplace | `1QvytEsb3iIyl0i9QlQXmR83u7E5rWFSc7lJMmWRhaRo` | gbrain-gary-tan, weekly-planning |
 | Presupuesto CS | *(search by name)* | weekly-planning |
 | SteerCos | *(search by name)* | weekly-planning |
 

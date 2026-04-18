@@ -20,6 +20,8 @@ tags: [user, cro, wherex]
 | Relevantes CS 2026 | `11Ux3z17eXvtOG0kRJs12_rG0KzWxrX8uIaGoinXxJeA` | Pipeline CS activo |
 | Relevantes SLT 2026 | `1q-kNUlgtq7KAaI2TIUD9n7kxXBTiy4F0O6qkplrkylE` | Pipeline SLT activo |
 | Narrativa Retención | `111a2K_NcQBk6BPOdgXHE_B5wVOJtk69lz_s53p5O1us` | Estrategia retención |
+| Narrativa CX | `1MgTtseOGuyVwnB-M5AnvT7iaSilMHEZQV6If0n3APxI` | Narrativa área CX |
+| Narrativa Marketplace | `1QvytEsb3iIyl0i9QlQXmR83u7E5rWFSc7lJMmWRhaRo` | Narrativa área Marketplace |
 | Presupuesto CS | *(buscar por nombre)* | Targets y brechas |
 | SteerCos | *(buscar por nombre)* | Actas y compromisos |
 
