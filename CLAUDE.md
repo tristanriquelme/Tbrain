@@ -6,6 +6,8 @@ Automated intelligence-gathering and synthesis system for Tristan Riquelme, CRO 
 Runs nightly and weekly routines via Claude Code scheduled tasks to produce strategic briefings
 called "Sueños" from Google Drive, Slack, and public web sources.
 
+Architecture based on [GBrain](https://github.com/garrytan/gbrain) by Garry Tan.
+
 ## Routines
 
 | File | Name | Schedule (Chile) | Connectors |
@@ -24,6 +26,58 @@ Authorize at: https://claude.ai/settings/connectors
 - **Slack** — reads revenue channels, posts Friday reminder
 - **Web Search** — searches news for 21 priority clients
 - **Google Calendar** — reads and updates Weekly Planning Review event
+
+## Repository Structure
+
+```
+Tbrain/
+├── CLAUDE.md                    ← this file
+├── brain/
+│   ├── SOUL.md                  ← G-Brain identity and mission
+│   ├── USER.md                  ← Tristan's profile, doc IDs, channel IDs, clients
+│   └── ACCESS_POLICY.md         ← Data access rules and editorial restrictions
+├── skills/
+│   └── RESOLVER.md              ← Skill routing table and dependency graph
+└── .claude/
+    ├── settings.json            ← Connector permissions
+    └── tasks/
+        ├── gbrain-gary-tan.md   ← Main nightly routine
+        ├── friday-reminder.md   ← Friday Slack reminder
+        └── weekly-planning.md   ← Sunday weekly planning
+```
+
+## Knowledge Model (GBrain Pattern)
+
+All output documents follow the GBrain Knowledge Model:
+
+```markdown
+[COMPILED TRUTH — current best understanding, rewritable]
+
+---
+
+[TIMELINE — append-only evidence trail]
+- YYYY-MM-DD HH:MM: dated evidence with source
+```
+
+**Above separator:** Synthesized analysis (patterns, hypotheses, briefings) — rewritten when new evidence changes the picture.
+**Below separator:** Raw evidence with timestamps and sources — never edited, only appended.
+
+## GBrain Concepts Applied
+
+| Concept | Applied in |
+|---------|-----------|
+| Signal-Detector | `gbrain-gary-tan` — entity extraction from Drive + Slack on every run |
+| Brain-First Lookup | `gbrain-gary-tan` HILO 3 — checks compiled truth before web search |
+| Tiered Enrich (Tier 1/2/3) | `gbrain-gary-tan` HILO 3 — structured fact extraction per client |
+| Cross-Modal Review | `gbrain-gary-tan` PASO 2 — quality gate before output |
+| Cron Idempotency | `gbrain-gary-tan` PASO 0 — checks for existing doc before creating |
+| Knowledge Model | Output format for Sueños and weekly briefings |
+| Reports Format | Timestamped headers with keyword routing on all saved docs |
+| SKILL.md Frontmatter | All task files — `type`, `trigger`, `dependencies`, `models`, `cost_per_run`, `success_metrics` |
+| Brain-Ops | `weekly-planning` — brain-first context load before generating briefing |
+| Daily-Task-Prep | `weekly-planning` — calendar lookahead with account context |
+| Soul Audit | `brain/SOUL.md`, `brain/USER.md`, `brain/ACCESS_POLICY.md` |
+| RESOLVER | `skills/RESOLVER.md` — skill routing, MECE check, dependency graph |
 
 ## Google Drive Documents
 
